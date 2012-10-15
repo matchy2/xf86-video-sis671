@@ -5,7 +5,7 @@ For use add in xorg:
 
 Section "Device"
 ...
-   Driver "sis"
+   Driver "sis671"
    Option "UseTiming1366" "yes"
 ..
 EndSection
