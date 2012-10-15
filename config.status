@@ -829,7 +829,7 @@ echo 'BEGIN {' >"$ac_tmp/subs1.awk" &&
 cat >>"$ac_tmp/subs1.awk" <<\_ACAWK &&
 S["LTLIBOBJS"]=""
 S["LIBOBJS"]=""
-S["DRIVER_NAME"]="sis"
+S["DRIVER_NAME"]="sis671"
 S["moduledir"]="${exec_prefix}/lib/xorg/modules"
 S["XSERVER_LIBPCIACCESS_FALSE"]="#"
 S["XSERVER_LIBPCIACCESS_TRUE"]=""

@@ -270,7 +270,7 @@ target_alias =
 # _ladir passes a dummy rpath to libtool so the thing will actually link
 # TODO: -nostdlib/-Bstatic/-lgcc platform magic, not installing the .a, etc.
 AM_CFLAGS = -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -I/usr/include/libdrm -I/usr/include/X11/dri  
-sis_drv_la_LTLIBRARIES = sis_drv.la
+sis_drv_la_LTLIBRARIES = sis671_drv.la
 sis_drv_la_LDFLAGS = -module -avoid-version
 sis_drv_ladir = ${exec_prefix}/lib/xorg/modules/drivers
 sis_drv_la_SOURCES = 300vtbl.h 310vtbl.h init301.c init301.h \
@@ -343,7 +343,7 @@ clean-sis_drv_laLTLIBRARIES:
 	  echo "rm -f \"$${dir}/so_locations\""; \
 	  rm -f "$${dir}/so_locations"; \
 	done
-sis_drv.la: $(sis_drv_la_OBJECTS) $(sis_drv_la_DEPENDENCIES) 
+sis671_drv.la: $(sis_drv_la_OBJECTS) $(sis_drv_la_DEPENDENCIES) 
 	$(LINK) -rpath $(sis_drv_ladir) $(sis_drv_la_LDFLAGS) $(sis_drv_la_OBJECTS) $(sis_drv_la_LIBADD) $(LIBS)
 
 mostlyclean-compile:
