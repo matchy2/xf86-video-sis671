@@ -1,5 +1,4 @@
 for test only!!
 
-copy files to /usr/include/xorg/
-and try to build
+copy into /usr/lib/xorg/modules/drivers/ (on gentoo)
 
