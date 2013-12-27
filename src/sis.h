@@ -36,8 +36,8 @@
 #define _SIS_H_
 
 // XXX!!!
-#define _swapl(x, n) swapl(x)
-#define _swaps(x, n) swaps(x)
+#define _swapl(x, n)
+#define _swaps(x, n)
 
 #define SISDRIVERVERSIONYEAR    6
 #define SISDRIVERVERSIONMONTH   10
@@ -76,6 +76,7 @@
 #include "xf86Cursor.h"
 #include "xf86cmap.h"
 #include "vbe.h"
+#include "misc.h"
 
 /*I.L. modified*/
 #include "sispcirename.h" 

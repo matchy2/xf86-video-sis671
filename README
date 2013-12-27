@@ -3,6 +3,9 @@ adapted by rasdark (andrew.senik@gmail.com)
 
 Does'nt work for xorg-server > 1.13 (no more XAA)
 
+Downgrade for xorg-server 1.11 (Ubuntu 12.04 LTS)
+adapted by MACHIDA 'matchy' Hideki (h@matchy.net)
+
 For use add in xorg:
 
 Section "Device"

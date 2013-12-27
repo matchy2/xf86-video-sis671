@@ -48,7 +48,7 @@ enum region_type {
 #define PCI_DOMBUS_MASK (((PCI_DOM_MASK) << 8) | 0x0ffu)
 
 static inline uint32_t
-pciTag(int busnum, int devnum, int funcnum)
+pciTag__(int busnum, int devnum, int funcnum)
 {
  uint32_t tag;
  tag = (busnum & (PCI_DOMBUS_MASK)) << 16;
@@ -57,6 +57,7 @@ pciTag(int busnum, int devnum, int funcnum)
 
  return tag;
 }
+#define pciTag(busnum, devnum, funcnum) pciTag__(busnum, devnum, funcnum)
 
 #ifndef XSERVER_LIBPCIACCESS
 
